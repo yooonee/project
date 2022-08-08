@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Nanum+Gothic:wght@700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -7,6 +9,36 @@ li{font-family: Pretendard;}
 input{background-color: #eceaea77;}
 span{vertical-align:middle}
 .total{left: 70px; position: relative;}
+
+body{position: relative;}
+#body-wrapper{min-height: 969px; height: auto;}
+footer{width: 100%; position: absolute; bottom: -7%; left: 0;}
+
+/************ 태그 검색창 시작 ************/
+
+/* 태그검색 글씨 */
+h2{text-align: center; font-family: 'Inter', sans-serif;}  
+
+/* 태그선택 글씨 */
+.tag_select{font-family: 'Inter', sans-serif; position: absolute; margin-top: 0px; margin-left: 617px;  font-size: 20px;}
+
+ /* 검색창 위에 라인 설정 */
+hr{width: 1310px; margin-bottom: 0;} 
+
+ /* 태그전체박스 */
+.tag_box{width: 1312px; height: 200px; background-color: rgb(233, 233, 233); margin:0 auto; border-radius: 0 0 10px 10px; overflow: auto}
+
+/* 태그들 */
+.tag_boxes{float: left;  margin-top: 30px;} /* 태그박스 가로로 쌓음 */
+#tag{margin-left: 75px; padding: 30px; font-family: 'Gowun Dodum', sans-serif;}
+a:active { color:rgb(22, 22, 22); font-weight: bold;}  /* 태그 선택시 색상 바뀜 */
+a{text-decoration-line: none; color: rgb(56, 56, 56);}
+
+/************ 태그 검색창 끝 ************/
+
+
+/************ 검색 결과 시작 ************/
+.serchNum{position: relative; text-align: center; margin-right: 1000px; margin-top: 30px; margin-bottom: 40px;}
 
 body{position: relative;}
 #body-wrapper{min-height: 969px; height: auto;}
@@ -62,7 +94,7 @@ a{text-decoration: none; color: black; font-size: 15px;}
 /* 좋아요&장바구니 */
 .two{position: absolute; left: 210px; bottom: 10px; display:flex}
 .tbox{background-color: #f1eeee; border-radius: 20px; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center;}
-.tbox>img{width: 25px; height: 25px;}
+.thum, .cart{width: 25px; height: 25px;}
 
 section{margin-bottom: 50px;}
 p{margin-bottom: 22px;}
@@ -73,3 +105,20 @@ footer>div>ul>li{display: inline-block; left: 38.5vw; position: relative; top: 1
 footer li>a{color: #6d6d6d;}
 #ft{background-color: #EAEAEA; height: 80px; position: relative; top: 2.5vw;}
 #copy{left: 35vw; position: relative; top: 20px; color: #3b3b3b; font-family: 'Gowun Batang', serif;}
+
+
+
+.tbox{width: 35px;
+    margin: 0px auto;
+    position: relative}
+
+.full {width: 58px; height: 58px;
+    position: absolute;
+    display: none;
+        top: -11.1px;
+        left: -11.5px;
+      }
+      
+.tbox:hover .full {
+display: block;
+}
